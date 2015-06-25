@@ -1,0 +1,58 @@
+create table tryppp(
+mail varchar,
+mobile varchar,
+name varchar,
+nric varchar,
+outlet varchar,
+hear varchar,
+status varchar,
+remarks varchar,
+date_register datetime,
+treatment_status varchar,
+conversion varchar,
+date_conversion datetime
+);
+
+alter table tryppp add column id integer auto increment;
+update tryppp set status='Not Contacted';
+alter table tryppp add column date_register datetime default '2015-05-10';
+alter table tryppp add column treatment_status varchar default 'Not done';
+alter table tryppp add column remarks text;
+alter table tryppp add column conversion varchar default 'No';
+alter table tryppp add column date_conversion datetime;
+
+update tryppp set date_register = 1431216000;
+delete from tryppp where email='';
+
+			AMK CENTRAL
+			ARC (Alexandra Retail Centre)
+			BEDOK
+			BISHAN MRT
+			DHOBY GHAUT
+			GOLDEN SHOE
+			LUCKY PLAZA
+			MARINE PARADE
+			NEX
+			RAFFLES CITY
+			WEST COAST
+			YISHUN CENTRAL
+create table tryppp(
+No integer(10),
+Registration_Date datetime,
+Name varchar(100),
+NRItrypppC varchar(100),
+Mobile_Number varchar(100),
+Email varchar(100),
+Outlet varchar(100),
+Source varchar(100),
+Contact_Status varchar(100),
+Treatment_Status varchar(100),
+Conversion varchar(100),
+Conversion_Date datetime,
+Remarks varchar(100)
+
+);
+
+select distinct dbo_tblmembers.* from tryppp left join dbo_tblmembers on tryppp.NRIC = dbo_tblmembers.NRIC where tryppp.NRIC <>'' order by tryppp.No asc
+#select * from dbo_tblmembers where NRIC='S6922848H'
+#select (select * from dbo_tblmembers where tryppp.NRIC = dbo_tblmembers.NRIC),* from tryppp

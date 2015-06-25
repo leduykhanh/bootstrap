@@ -1,0 +1,236 @@
+@font-face {
+    font-family: Jangkoo;
+    src: url("../fonts/proximanova-bold-webfont.woff");
+}
+
+body{
+	font-family: Jangkoo;
+	background-color:#F3F5F3;
+	color:#5B5B58;
+}
+em{
+	font-size:12px;
+}
+.ppp-mobile-img{
+	display:none;
+}
+.ppp-desktop-img{
+	display:block;
+	}
+.ppp-mobile-img-whatmisting{
+	display:none;
+}
+.ppp-desktop-img-whatmisting{
+	display:block;
+	}
+.social{
+  position: absolute;
+  right:60px;
+  top:40px;
+  z-index:2;
+}
+.social div {
+		padding:5px;
+	}
+.ppp-container{
+	padding-left:50px;
+	padding-right:50px;
+	/*font-family:"Proxima Nova";
+	background-image:url('../img/Try-PPP-desktop_landing-page-1.jpg');*/
+	background-repeat: no-repeat;
+	position: relative;
+	width: 100%;
+	background-size: 100%;
+	height: 100%;
+	/*margin-bottom:100px;*/
+}
+
+.ppp-left{
+	padding-right:20px;
+}
+.ppp-right{
+	padding-left:20px;
+}
+.ppp-button{
+	background-color:#00A0DF;
+	/*margin:30px 20px 50px 20px;
+	padding-right:150px;*/
+	font-weight:bold;
+	color: #FFF;
+	border:no;
+	padding:5px;
+}
+.ppp-text-row{
+	margin-bottom:30px;
+}
+.ppp-divider{
+	background-image:url('../img/Try-PPP-desktop_dash.png');
+	background-repeat: no-repeat;
+	background-position:center;
+	padding:20px;
+}
+.ppp-blank{
+	/*margin-bottom:1100px;*/
+	position: relative;
+	width: 100%;
+	background-size: 100%;
+	margin:0 auto;
+	padding:0px;
+	z-index:1;
+}
+.ppp-TC{
+	font-size:10px;
+	font-weight:bold;
+}
+.ppp-watch{
+	font-size:20px;
+}
+.alert {
+	padding:5px;
+	margin-bottom:5px;
+}
+.row0{
+	background-color:#F3F5F3;
+}
+.row1{
+	background-color:#FFFFFF;
+}
+.email-header{
+	font-weight:bold;
+	color:green;
+}
+.update_button{
+	color:blue;
+	font-weight:bold;
+}
+.updating_button{
+	color:red;
+	font-weight:bold;
+}
+.ppp-cf-container{
+	padding-left:50px;
+	padding-right:50px;
+	font-family:"Proxima Nova";
+	background-image:url('../img/Try-PPP-desktop_submit-page-1.jpg');
+	background-repeat: no-repeat;
+	position: relative;
+	width: 100%;
+	background-size: 100%;
+	height: 100%;
+	margin-bottom:100px;
+}
+
+.ppp-cf-blank{
+	margin-bottom:350px;
+}
+.ppp-cf-center-image{
+	background-image:url('../img/Try-PPP-desktop_ppp-shop-banner.jpg');
+	background-repeat: no-repeat;
+	background-position:center;
+	height:336px;
+}
+.spin{
+     -webkit-transform-origin: 50% 58%;
+     transform-origin:50% 58%;
+     -ms-transform-origin:50% 58%; /* IE 9 */
+     -webkit-animation: spin .6s infinite linear;
+     -moz-animation: spin .2s infinite linear;
+     -o-animation: spin .2s infinite linear;
+     animation: spin .2s infinite linear;
+}
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media screen and (max-width: 479px){
+	.ppp-mobile-img{
+		display:block;
+	}
+	.ppp-desktop-img{
+		display:none;
+	}
+	.ppp-mobile-img-whatmisting{
+		display:block;
+	}
+	.ppp-desktop-img-whatmisting{
+		display:none;
+		}
+	.social{
+		right:10px;
+	}
+	.ppp-container{
+		/*background-image:url('../img/Try-PPP-mobile-landing-page.jpg');*/
+	}
+	.ppp-blank{
+		/*margin-bottom:400px;*/
+	}
+	.ppp-right{
+		margin-top: 50px;
+	}
+	.ppp-cf-container{
+		padding-left:50px;
+		padding-right:50px;
+		/*font-family:"Proxima Nova";*/
+		background-image:url('../img/Try-PPP-mobile-submit-page.jpg');
+		}
+	.ppp-cf-center-image{
+		background-image:url('../img/Try-PPP-mobile-ppp-shop-banner.jpg');
+	}
+}
+@media screen and (max-width: 768px) and (min-width:480px){
+	.ppp-mobile-img{
+		display:block;
+	}
+	.ppp-desktop-img{
+		display:none;
+	}
+	.ppp-mobile-img-whatmisting{
+		display:block;
+	}
+	.ppp-desktop-img-whatmisting{
+		display:none;
+		}
+	.social{
+		right:20px;
+	}
+	.ppp-container{
+		/*background-image:url('../img/Try-PPP-mobile-landing-page.jpg');*/
+	}
+	.ppp-blank{
+		/*margin-bottom:600px;*/
+	}
+	.ppp-right{
+		margin-top: 50px;
+	}
+	.ppp-cf-container{
+		padding-left:50px;
+		padding-right:50px;
+		/*font-family:"Proxima Nova";*/
+		background-image:url('../img/Try-PPP-mobile-submit-page.jpg');
+		}
+	.ppp-cf-center-image{
+		background-image:url('../img/Try-PPP-mobile-ppp-shop-banner.jpg');
+	}
+}

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="bootstrap-select/css/bootstrap-select.min.css" />
+<link rel="stylesheet" type="text/css" href="css/tryppp.css" />
+</head>
+<body>
+<div class="col-md-12 ppp-blank" >
+	<div class="ppp-desktop-img">
+		<img width=100% src="img/Desktop_landing_top.jpg" />
+	</div>
+	<div class="ppp-mobile-img">
+		<img width=100% src="img/Mobile_landing_top.jpg" />
+	</div>
+</div>
+<div class="social text-right">
+	<div class="ppp-desktop-img">
+		<a target="_blank" href="http://www.thepppshop.com"><img src="img/web-icon.png" /></a>
+		<a target="_blank" href="https://www.facebook.com/thepppshop"><img src="img/fb-icon.png" /></a>
+		<a target="_blank" href="https://instagram.com/pppshopsg"><img src="img/instagram-icon.png" /></a>
+	</div>
+	<div class="ppp-mobile-img">
+		<div><a target="_blank" href="http://www.thepppshop.com"><img src="img/m-web-icon.png" /></a></div>
+		<div><a target="_blank" href="https://www.facebook.com/thepppshop"><img src="img/m-fb-icon.png" /></a></div>
+		<div><a target="_blank" href="https://instagram.com/pppshopsg"><img src="img/m-instagram-icon.png" /></a></div>
+	</div>
+</div>
+<div class="container-fluid ppp-container">
+	<div class="col-md-3"></div>
+	<div class="text-left col-md-6 ppp-left">
+	<form method="POST" action="">
+		<div class = "row">
+			<div class="form-group has-feedback has-feedback-right col-md-6">
+				<label class="control-label" for="name">NAME</label>
+			  <div class="input-group">
+				<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+				<input type="text"  placeholder="Your Name" class="form-control" id="name">
+			  </div>
+			  <!--<span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span> -->
+			</div>
+			<div class="form-group has-feedback has-feedback-right col-md-6">
+				<label class="control-label" for="nric">NRIC/PASSPORT</label>
+			  <div class="input-group">
+				<span class="input-group-addon"><span class="glyphicon glyphicon-bookmark"></span></span>
+				<input type="text"  placeholder="NRIC" class="form-control" id="nric" >
+			  </div>
+			  <!--<span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span> -->
+			  <div class="alert alert-danger hidden" role="alert">
+				  <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+				  <span class="sr-only">Error:</span>
+				  Enter a valid NRIC number
+			  </div>
+			</div>
+			<div class="form-group has-feedback has-feedback-right col-md-6">
+				<label class="control-label" for="contact">MOBILE NO.</label>
+			  <div class="input-group">
+				<span class="input-group-addon"><span class="glyphicon glyphicon-phone"></span></span>
+				<input type="text"  placeholder="Mobile" class="form-control" id="contact" >
+			  </div>
+			  <!--<span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>-->
+			  <div class="alert alert-danger hidden" role="alert">
+				  <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+				  <span class="sr-only">Error:</span>
+				  Enter a valid mobile number
+			  </div>
+			</div>
+			<div class="form-group has-feedback has-feedback-right col-md-6">
+				<label class="control-label" for="email">EMAIL</label>
+			  <div class="input-group">
+				<span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
+				<input type="text"  placeholder="Email" class="form-control" id="email" >
+			  </div>
+			 <!-- <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>-->
+			  <div class="alert alert-danger hidden" role="alert">
+				  <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+				  <span class="sr-only">Error:</span>
+				  Enter a valid email address
+			  </div>
+			</div>
+
+
+			
+		</div>
+		<div class = "row ppp-text-row">
+			<label class="control-label col-md-12" for="outlet" >PREFERED OUTLET</label>
+		  <select class="selectpicker col-xs-12 col-md-12" id ="outlet" data-size="5">
+			<option value="" disabled selected>Please select an outlet</option>
+			<option>AMK CENTRAL</option>
+			<option>ARC (Alexandra Retail Centre)</option>
+			<option>BEDOK</option>
+			<option>BISHAN MRT</option>
+			<option>DHOBY GHAUT</option>
+			<option>GOLDEN SHOE</option>
+			<option>LUCKY PLAZA</option>
+			<option>MARINE PARADE</option>
+			<option>NEX</option>
+			<option>RAFFLES CITY</option>
+			<option>WEST COAST</option>
+			<option>YISHUN CENTRAL</option>
+
+		  </select>
+		  <div class="col-md-12">
+			<em>Staff from chosen outlet will be in touch with you.</em>
+		  </div>
+		  	<div class="alert alert-danger hidden" role="alert">
+				  <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+				  <span class="sr-only">Error:</span>
+				  Choose an outlet
+			</div>
+		</div>
+		<div class = "row ppp-text-row">
+			<label class="text-left col-md-12" for="hear"><strong>HOW DID YOU HEAR ABOUT US?</strong></label>
+		  <select class="selectpicker col-xs-12 col-md-12" id="hear" data-size="5">
+			<option value="" disabled selected >Please select an option</option>
+			<option>Advertisement</option>
+			<option>Magazine Article</option>
+			<option>Website/Search engine</option>
+			<option>Social Media (Facebook, Instagram)</option>
+			<option>From a friend</option>
+			<option>Other</option>
+		  </select>
+		</div>
+		<div class = "row">
+			<div class="col-md-12" id="sumit_div">
+				<input type="button" onclick = "validateForm()" class="text-center col-xs-12 col-md-12 ppp-button " value="SUBMIT" />
+			</div>
+		</div>
+		<div class="ppp-TC text-center"> *Applicable to new customers only. Offer ends 30 May 2015. T&C apply. </div>
+		</form>
+		<div class="col-md-12" >
+			<div class="ppp-desktop-img-whatmisting">
+				<img width=100% src="img/Desktop_landing_whatismisting.png" />
+			</div>
+			<div class="ppp-mobile-img-whatmisting">
+				<img width=100% src="img/mobile_landing_whatismisting.png" />
+			</div>
+		</div>
+		<!--
+		<div class = "row">
+			<div id="fb-root">
+			</div>
+			<script>
+			(function(d, s, id) { 
+			 var js, fjs = d.getElementsByTagName(s)[0];  
+			 if (d.getElementById(id)) return; 
+			 js = d.createElement(s); 
+			 js.id = id; 
+			 js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
+			 fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));
+			 </script>
+			 <div class="fb-video" data-allowfullscreen="true" 
+					data-href="/thepppshop/videos/vb.504052299703604/666314600144039/?type=1"
+					data-width="848" data-height="447">
+				<div class="fb-xfbml-parse-ignore">
+					<blockquote cite="/thepppshop/videos/666314600144039/">
+						<a href="/thepppshop/videos/666314600144039/">PPP&#039;s Mist</a>
+						<p>Experience PPP&#039;s Mist - the latest in mobile skincare technology! PPP&#039;s Mist is a compact and portable facial spray designed to optimise the delivery of ingredients to the deeper skin layers by fragmenting PPP Essential Solutions into a fine micro-particle mist. Paired with PPP&#039;s Hyaluronic Acid Essential Solution, experience intensive hydration on the go - anytime, anywhere.Mist is available for purchase at any PPP Shop distributor. Find out more at www.thepppshop.com.</p>
+						Posted by <a href="https://www.facebook.com/thepppshop">The PPP Shop</a> on Wednesday, February 25, 2015
+						</blockquote>
+				</div>
+			</div>
+		</div>
+		-->
+		<div class="row">
+			<iframe id="vimeo_frame" src="https://player.vimeo.com/video/127587617?autoplay=1&loop=1" 
+			width="100%" frameborder="0" 
+			webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+		</div>
+			<div class="row ppp-divider"></div>
+			<!--<div class="ppp-watch"><strong>Watch</strong> the video to find out what <strong>PPP Misting Facials</strong> is all about! </div> -->
+	</div>
+	<div class="col-md-3"></div>
+</div>
+<div class="container-fluid ">
+	<div class="col-md-2"></div>
+	<div class="col-md-8">
+		<div class="text-center">
+			<strong>The PPP Shop's Misting Facial</strong> is a quick convenient procedure that takes less than 5 minutes. During misting, 
+			micro-sized particles of a specially formulated serum containing Hyaluronic Acid is delivered over the skin. 
+			<strong>Hyaluronic Acid</strong> is an excellent moisturizer as it reduces sagginess when skin is parched and dehydrated. 
+			Hyaluronic Acid on the skin has also been clinically proven to be:
+		</div>
+		<div class="col-md-12" style="margin-bottom:80px;" >
+			<div class="ppp-desktop-img-whatmisting">
+				<img width=100% src="img/Desktop_landing_4benefits.png" />
+			</div>
+			<div class="ppp-mobile-img-whatmisting">
+				<img width=100% src="img/Mobile_landing_4benefits.png" />
+			</div>
+		</div>
+	</div>
+	<div class="col-md-2"></div>
+</div>
+<div class="container-fluid ">
+	<div class="modal fade" id="modalChecking" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content text-center">
+				<span style="font-size:3em;" class="glyphicon glyphicon-repeat spin"></span>
+				<div class="modal-body">
+					<strong>Checking your information...</strong>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+   <script src="bootstrap/js/bootstrap.min.js"></script>
+   <script src="bootstrap-select/js/bootstrap-select.min.js"></script>
+   <!--<script src="less.js-master/dist/less.min.js"></script> -->
+   <script type="text/javascript">
+    $('.selectpicker').selectpicker();
+	$("#vimeo_frame").height($("#vimeo_frame").width()*283/500);
+	function validateEmail(value) {
+		//re = /\S+@\S+\.\S+/;
+		var re = /(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/;
+	  return re.test(value);
+	}
+	function validateNRIC(value){
+		//var re = /^[SFTG]\d{7}[A-Z]$/;
+		//return re.test(value);
+		return true;
+	}
+	function validateMobile(value){
+		var re = /^\d{8}$/;
+		return re.test(value);
+	}
+	$("#email").focusout(function(){
+		if(validateEmail($(this).val())) {
+			$(this).css({'border-color':'green',});
+			$(this).parent().parent().find("div").each(function(i,val){
+				if($(val).hasClass("alert"))
+				$(val).addClass("hidden");
+			});
+		}
+		else{
+		$(this).css({'border-color':'red',});
+		$(this).parent().parent().find("span").each(function(i,val){
+			if($(val).hasClass("glyphicon-ok"))
+				$(val).removeClass("glyphicon-ok").addClass("glyphicon-exclamation-sign");
+				//console.log($(val));
+		});
+		$(this).parent().parent().find("div").each(function(i,val){
+			if($(val).hasClass("alert"))
+				$(val).removeClass("hidden");
+				//console.log($(val));
+		});
+		}
+	});
+	$("#nric").focusout(function(){
+		if(validateNRIC($(this).val())) {
+			$(this).css({'border-color':'green',});
+			$(this).parent().parent().find("div").each(function(i,val){
+				if($(val).hasClass("alert"))
+				$(val).addClass("hidden");
+			});
+		}
+		else{
+		$(this).css({'border-color':'red',});
+		$(this).parent().parent().find("span").each(function(i,val){
+			if($(val).hasClass("glyphicon-ok"))
+				$(val).removeClass("glyphicon-ok").addClass("glyphicon-exclamation-sign");
+				//console.log($(val));
+		});
+		$(this).parent().parent().find("div").each(function(i,val){
+			if($(val).hasClass("alert"))
+				$(val).removeClass("hidden");
+				//console.log($(val));
+		});
+		}
+	});	
+	$("#contact").focusout(function(){
+		if(validateMobile($(this).val())) {
+			$(this).css({'border-color':'green',});
+			$(this).parent().parent().find("div").each(function(i,val){
+				if($(val).hasClass("alert"))
+				$(val).addClass("hidden");
+			});
+		}
+		else{
+		$(this).css({'border-color':'red',});
+		$(this).parent().parent().find("span").each(function(i,val){
+			if($(val).hasClass("glyphicon-ok"))
+				$(val).removeClass("glyphicon-ok").addClass("glyphicon-exclamation-sign");
+				//console.log($(val));
+		});
+		$(this).parent().parent().find("div").each(function(i,val){
+			if($(val).hasClass("alert"))
+				$(val).removeClass("hidden");
+				//console.log($(val));
+		});
+		}
+	});	
+	$("#outlet").change(function(){
+			$("#outlet").parent().find("div").each(function(i,val){
+			if($(val).hasClass("alert"))
+				$(val).addClass("hidden");
+				//console.log($(val));
+		});
+	});
+	function validateForm(){
+		if(!validateEmail($("#email").val())) {
+			$("#email").css({'border-color':'red',});
+			$("#email").focus();
+			return;
+		}
+		if(!validateNRIC($("#nric").val())) {
+			$("#nric").css({'border-color':'red',});
+			$("#nric").focus();
+			return;
+		}
+		if(!validateMobile($("#contact").val())) {
+			$("#contact").css({'border-color':'red',});
+			$("#contact").focus();
+			return;
+		}
+		if($("#outlet").val()==null) 
+			{
+				$("#outlet").parent().find("div").each(function(i,val){
+						if($(val).hasClass("alert"))
+							$(val).removeClass("hidden");
+							//console.log($(val));
+					});
+				return;
+			}
+		$("#modalChecking").modal();
+		$("#sumit_div").html( "<div class='text-center ppp-button' >"+
+									"<span class='glyphicon glyphicon-repeat spin'></span>"+
+										"Checking"+
+									"</div>	");
+		$.ajax({
+			  method: "POST",
+			  url: "checkDB.php",
+			  data: { name: $("#name").val(),
+					  nric: $("#nric").val(),
+					  email:$("#email").val(),
+					  mobile:$("#contact").val(),
+					  outlet:$("#outlet").val(),
+					  hear:$("#hear").val(),
+					  },
+			  success: function(msg){
+			  console.log(msg);
+							if(msg==1) 
+								window.location.href = "confirm.html";
+							if(msg==0) {alert("Wrong email entered!");}
+							}
+			})
+	}
+  </script>
+
+</body>
+</html>

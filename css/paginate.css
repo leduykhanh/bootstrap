@@ -1,0 +1,10 @@
+.page-number{
+	padding:10px;
+	margin:2px;
+	cursor: pointer;
+	background-color:#ABABAB;
+	border-radius: 50%;
+}
+div.pager span.active {
+    background: #c00;
+}

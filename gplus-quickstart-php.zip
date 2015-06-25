@@ -1,0 +1,7 @@
+--2015-05-11 18:01:45--  https://github.com/googleplus/gplus-quickstart-php/archive/master.zip
+Resolving github.com... 192.30.252.130
+Connecting to github.com|192.30.252.130|:443... connected.
+ERROR: cannot verify github.com's certificate, issued by `/C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert SHA2 Extended Validation Server CA':
+  Unable to locally verify the issuer's authority.
+To connect to github.com insecurely, use `--no-check-certificate'.
+Unable to establish SSL connection.
